@@ -1,16 +1,18 @@
 import express from 'express';
 import cors from 'cors';
+import { corsConfig } from './config/CorsConfig';
+import { limiter } from './config/RateLimit';
+import generatestory from './routers/GenerateStory';
 
 const app = express();
-const PORT = 3000;
 
 app.use(cors());
+app.use(express.json());
+app.use(limiter);
+app.use(generatestory);
 
-app.get('/', (req, res) => {
-    res.send('Hello, World!');
-});
-
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on ${PORT}`);
 });
 
