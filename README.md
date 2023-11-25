@@ -22,9 +22,18 @@ This project leverages OpenAI's GPT-3 to dynamically generate stories based on u
 
 To run this project locally, you'll need to set up your environment variables. Create a `.env` file in the root of the project and define the following variables:
 
+### In the frontend
+
 ```plaintext
 VITE_BACKEND_URL=your-backend-url
-VITE_OPENAI_KEY=your-openai-api-key
+```
+
+### In the backend
+
+```plaintext
+OPENAI_API_URL=your-openai-api-url
+OPENAI_API_KEY=your-openai-api-key
+FRONT_END_URL=your-frontend-url
 ```
 
 Replace your-backend-url with the URL of your backend and your-openai-api-key with your OpenAI API key.
