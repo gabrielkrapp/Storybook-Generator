@@ -25,7 +25,7 @@ const StoryCreator: React.FC = () => {
   };
 
   return (
-    <div className="p-4 max-w-md mx-auto">
+    <div className="max-w-md mx-auto">
       <StoryInput theme={theme} setTheme={setTheme} />
       <CreateButton isLoading={isLoading} onClick={handleCreateStory} />
 
@@ -35,7 +35,11 @@ const StoryCreator: React.FC = () => {
         </div>
       )}
       {error && <p className="text-center mt-5 text-red-500">Erro: {error}</p>}
-      {story && <p className="mt-4 p-4 border border-gray-300 rounded shadow text-white">{story}</p>}
+      {story && (
+        <div className="mt-4 px-4 pt-2 pb-4 border border-gray-300 rounded shadow-lg text-white bg-black bg-opacity-90">
+          <p className="whitespace-pre-wrap m-0 story-text">{story.trim()}</p>
+        </div>
+      )}
     </div>
   );
 };

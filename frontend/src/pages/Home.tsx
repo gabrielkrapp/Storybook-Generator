@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import React from 'react';
 import StoryCreator from '../components/StoryCreator';
 import background from '../assets/background.png';

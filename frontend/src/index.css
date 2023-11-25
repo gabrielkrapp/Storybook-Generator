@@ -28,3 +28,7 @@
   height: 2rem;
   animation: spin 1s linear infinite;
 }
+
+.story-text p:first-line {
+  text-indent: -1rem;
+}
