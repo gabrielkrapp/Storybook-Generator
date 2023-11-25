@@ -25,16 +25,20 @@ To run this project locally, you'll need to set up your environment variables. C
 ```plaintext
 VITE_BACKEND_URL=your-backend-url
 VITE_OPENAI_KEY=your-openai-api-key
+```
+
 Replace your-backend-url with the URL of your backend and your-openai-api-key with your OpenAI API key.
 
 ## Known Bug
+
 There's a known issue where occasionally the OpenAI API may return incomplete stories. This is being investigated, and a fix will be implemented as soon as possible.
 
 ## Mobile Application
+
 The mobile version of this application is currently under development using React Native. It will be available on both iOS and Android platforms. Stay tuned for the release and the addition of download links.
 
 ## Contributing
+
 We welcome contributions to this project. If you have suggestions or encounter any bugs, please open an issue in the repository.
 
 Thank you for visiting the Storybook Generator project!
-```
