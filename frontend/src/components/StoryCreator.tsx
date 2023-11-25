@@ -29,8 +29,12 @@ const StoryCreator: React.FC = () => {
       <StoryInput theme={theme} setTheme={setTheme} />
       <CreateButton isLoading={isLoading} onClick={handleCreateStory} />
 
-      {isLoading && <p className="text-center p-4 text-white">Carregando...</p>}
-      {error && <p className="text-center p-4 text-red-500">Erro: {error}</p>}
+      {isLoading && (
+        <div className="flex justify-center items-center mt-10">
+          <div className="spinner"></div>
+        </div>
+      )}
+      {error && <p className="text-center mt-5 text-red-500">Erro: {error}</p>}
       {story && <p className="mt-4 p-4 border border-gray-300 rounded shadow text-white">{story}</p>}
     </div>
   );
