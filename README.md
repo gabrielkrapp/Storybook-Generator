@@ -6,6 +6,14 @@ Welcome to the Storybook Generator! This innovative application integrates with 
 
 Soon i will be adding the live demo link here.
 
+## Application Prints
+
+![Home](https://github.com/gabrielkrapp/AI-Historys/assets/109620152/6b84aca8-e800-4fb4-b6d4-623b94de8c7a)
+
+![Loading](https://github.com/gabrielkrapp/AI-Historys/assets/109620152/288c4e64-7495-4aa8-bc18-92ec1fabf428)
+
+![Story](https://github.com/gabrielkrapp/AI-Historys/assets/109620152/7454c84e-a3fd-4666-9420-3161e5f4ba91)
+
 ## Technologies Used
 
 - React.js
