@@ -1,3 +1,5 @@
+![Logo](https://github.com/gabrielkrapp/AI-Historys/assets/109620152/0b380094-6c62-46a5-9412-65942e345b61)
+
 # Storybook Generator
 
 Welcome to the Storybook Generator! This innovative application integrates with OpenAI's powerful language model to create enchanting and personalized stories for children.
