@@ -1,6 +1,5 @@
 import express from 'express';
 import cors from 'cors';
-import { corsConfig } from './config/CorsConfig';
 import { limiter } from './config/RateLimit';
 import generatestory from './routers/GenerateStory';
 
