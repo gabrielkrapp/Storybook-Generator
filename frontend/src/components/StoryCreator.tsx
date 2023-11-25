@@ -15,7 +15,7 @@ const StoryCreator: React.FC = () => {
     setStory(null);
 
     try {
-      const response = await axios.post('http://localhost:3001/generate-story', { theme });
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/generate-story`, { theme });
       setStory(response.data.story);
     } catch (error: any) {
       setError(error.response?.data?.error || error.message);
