@@ -8,7 +8,7 @@ const swaggerDefinition = {
   openapi: '3.0.0',
   info: {
     title: 'Storybook Generator API',
-    version: getVersion(),
+    version: '1.1.1',
     description: 'This is a simple API to generate stories based on a theme using OpenAI.',
   },
   servers: [
