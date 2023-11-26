@@ -6,6 +6,38 @@ import dotenv from "dotenv";
 const router = express.Router();
 dotenv.config();
 
+/**
+ * @openapi
+ * /generate-story:
+ *   post:
+ *     tags:
+ *       - Story
+ *     description: Generate a story based on a theme.
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               theme:
+ *                 type: string
+ *                 example: A day in the park
+ *     responses:
+ *       200:
+ *         description: Story generated successfully.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 story:
+ *                   type: string
+ *                   example: Once upon a time in a park...
+ *       500:
+ *         description: Error occurred.
+ */
+
 router.post('/generate-story', async (req, res) => {
     try {
       const { theme } = req.body;
