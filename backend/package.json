@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node dist/index.js",
     "test": "jest",
-    "prebuild": "chmod +x node_modules/.bin/tsc",
     "build": "tsc",
     "dev": "nodemon src/index.ts"
   },
