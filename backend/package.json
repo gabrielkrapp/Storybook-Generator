@@ -7,7 +7,7 @@
     "node": "18"
   },
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "node dist/index.js",
     "build": "tsup src",
     "test": "jest",
     "dev": "tsx src/index.ts"
