@@ -6,7 +6,7 @@ Welcome to the Storybook Generator! This innovative application integrates with 
 
 ## Live Demo
 
-Soon i will be adding the live demo link here.
+https://storybook-generator.vercel.app/
 
 ## Application Prints
 
