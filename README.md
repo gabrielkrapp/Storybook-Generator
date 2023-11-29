@@ -14,7 +14,12 @@ https://storybook-generator.vercel.app/
 
 ![Loading](https://github.com/gabrielkrapp/AI-Historys/assets/109620152/288c4e64-7495-4aa8-bc18-92ec1fabf428)
 
-![Story](https://github.com/gabrielkrapp/AI-Historys/assets/109620152/7454c84e-a3fd-4666-9420-3161e5f4ba91)
+![Story](https://github.com/gabrielkrapp/Storybook-Generator/assets/109620152/4a504e75-8e42-48b8-9c9a-efb572eb1cac)
+
+
+## New Feature: Text-to-Speech
+
+Enhancing the storytelling experience, we've now integrated a Text-to-Speech (TTS) feature! With just a click, stories are narrated aloud, bringing them to life and offering a more immersive experience for children. This feature utilizes the latest TTS technologies to deliver clear and engaging story narration.
 
 ## Technologies Used
 
@@ -23,6 +28,7 @@ https://storybook-generator.vercel.app/
 - Axios for HTTP requests
 - ViteJS as the build tool
 - OpenAI's GPT-3 for generating stories
+- Web Speech API for Text-to-Speech functionality
 
 ## Integration with OpenAI
 
