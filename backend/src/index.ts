@@ -4,10 +4,11 @@ import { limiter } from './config/RateLimit';
 import generatestory from './routers/GenerateStory';
 import swaggerUi from 'swagger-ui-express';
 import swaggerSpec from './swagger/swagger';
+import { corsOptions } from './config/CorsOptions';
 
 const app = express();
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.get('/', (req, res) => {
