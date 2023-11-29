@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import StoryInput from './StoryInput';
 import CreateButton from './CreateButton';
+import SpeechButton from './SpeechButton';
 
 const StoryCreator: React.FC = () => {
   const [theme, setTheme] = useState('');
@@ -37,6 +38,7 @@ const StoryCreator: React.FC = () => {
       {error && <p className="text-center mt-5 text-red-500">Erro: {error}</p>}
       {story && (
         <div className="mt-4 px-4 pt-2 pb-4 border border-gray-300 rounded shadow-lg text-white bg-black bg-opacity-90">
+          <SpeechButton text={story} />
           <p className="whitespace-pre-wrap m-0 story-text">{story.trim()}</p>
         </div>
       )}

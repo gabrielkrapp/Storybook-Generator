@@ -12,4 +12,8 @@ export interface MessageProps {
     message: string;
     isError?: boolean;
 }
+
+export interface SpeechButtonProps {
+    text: string;
+}
   
