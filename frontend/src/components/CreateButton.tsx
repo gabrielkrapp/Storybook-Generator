@@ -1,9 +1,5 @@
 import React from 'react';
-
-interface CreateButtonProps {
-  isLoading: boolean;
-  onClick: () => void;
-}
+import { CreateButtonProps } from '../types';
 
 const CreateButton: React.FC<CreateButtonProps> = ({ isLoading, onClick }) => {
   return (

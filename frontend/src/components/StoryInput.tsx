@@ -1,9 +1,5 @@
 import React from 'react';
-
-interface StoryInputProps {
-  theme: string;
-  setTheme: React.Dispatch<React.SetStateAction<string>>;
-}
+import { StoryInputProps } from '../types';
 
 const StoryInput: React.FC<StoryInputProps> = ({ theme, setTheme }) => {
   return (
