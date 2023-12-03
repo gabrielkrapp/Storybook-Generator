@@ -1,11 +1,11 @@
 export interface StoryInputProps {
     theme: string;
-    setTheme: (theme: string) => void;
+    setTheme: React.Dispatch<React.SetStateAction<string>>;
 }
   
 export interface CreateButtonProps {
-    handleCreateStory: () => void;
     isLoading: boolean;
+    onClick: () => void;
 }
   
 export interface MessageProps {
